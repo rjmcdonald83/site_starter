@@ -1,0 +1,172 @@
+!!!
+/[if lt IE 7] <html class="lt-ie9 lt-ie8 lt-ie7">
+/[if IE 7] <html class="lt-ie9 lt-ie8">
+/[if IE 8] <html class="lt-ie9">
+/ [if gt IE 8]><!
+%html
+  / <![endif]
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+    %title Motherplate - A bare bones responsive HTML5 CSS3 SCSS boilerplate for web designers
+    %meta{:content => "", :name => "description"}
+    %meta{:content => "width=device-width", :name => "viewport"}
+    %link{:href => "css/main.css", :rel => "stylesheet"}
+    /[if lt IE 9] <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  %body
+    %a{:href => "https://github.com/leemunroe/motherplate"}
+      %img{:alt => "Fork me on GitHub", :src => "https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png", :style => "position: absolute; top: 0; right: 0; border: 0;"}
+    .container
+      %h1 Motherplate
+      %h2 A bare bones responsive HTML5 CSS3 SCSS boilerplate for web designers
+      %iframe{:allowtransparency => "true", :frameborder => "0", :height => "30", :scrolling => "0", :src => "http://ghbtns.com/github-btn.html?user=leemunroe&repo=motherplate&type=watch&count=true&size=large", :width => "170"}
+      %iframe{:allowtransparency => "true", :frameborder => "0", :height => "30", :scrolling => "0", :src => "http://ghbtns.com/github-btn.html?user=leemunroe&repo=motherplate&type=fork&count=true&size=large", :width => "170"}
+      %hr
+      %h1 Heading 1
+      %h2 Heading 2
+      %h3 Heading 3
+      %h4 Heading 4
+      %h5 Heading 5
+      %p Paragraph
+      %p
+        %a{:href => ""} Link text
+      %blockquote
+        %p You're good. Get better. Stop asking for things.
+      %pre
+        %code &lt;script&gt;Some code&lt;/script&gt;
+      %hr
+      %h2 Buttons
+      %p
+        %button.btn.btn-primary Primary button
+        %button.btn Default button
+        %button.btn.btn-link Link button
+      %hr
+      %h2 Notifications/Alerts
+      .notification.error
+        %p There was a problem.
+      .notification.success
+        %p Successs! Something succeeded.
+      .notification.warning
+        %p Watch out, here's a warning.
+      .notification.info
+        %p Here's some useful information.
+      .notification.empty
+        %p This is an empty state. You should probably add something to get started.
+      %hr
+      %h2 Lists
+      %ul
+        %li Option 1
+        %li Option 2
+        %li Option 3
+      %ol
+        %li Option 1
+        %li Option 2
+        %li Option 3
+      %ul.nolist
+        %li Option 1
+        %li Option 2
+        %li Option 3
+      %hr
+      %h2 Tables
+      %table
+        %thead
+          %tr
+            %th{:scope => "col"} Column 1
+            %th{:scope => "col"} Column 2
+            %th{:scope => "col"} Column 3
+        %tbody
+          %tr
+            %td Data 1
+            %td Data 2
+            %td Data 3
+      %hr
+      %h2 Forms
+      %form
+        .item
+          %label{:for => ""} Text label
+          %input{:type => "text"}
+          %p.note Note
+        .item
+          %label{:for => ""} Email
+          %input{:type => "email"}
+        .item
+          %label{:for => ""} Search
+          %input{:type => "search"}
+        .item
+          %label{:for => ""}
+            Password
+            %span.req (required)
+          %input{:type => "password"}
+        .item.error
+          %label{:for => ""}
+            Text label
+            %span.req (required)
+          %input{:type => "text"}
+          %p.reason This field is required
+        .item
+          %label{:for => ""} Textarea
+          %textarea
+        .item
+          %label
+            %input{:type => "checkbox"}
+            Option 1
+          %label
+            %input{:type => "checkbox"}
+            Option 2
+          %label
+            %input{:type => "checkbox"}
+            Option 3
+        .item
+          %label
+            %input{:name => "radio", :type => "radio"}
+            Option 1
+          %label
+            %input{:name => "radio", :type => "radio"}
+            Option 2
+          %label
+            %input{:name => "radio", :type => "radio"}
+            Option 3
+        %button Submit
+      %hr
+      %h2 Responsive Grid
+      .group
+        .span6{:style => "background:pink;height:50px;margin-bottom:10px;"} .span6
+        .span6{:style => "background:pink;height:50px;margin-bottom:10px;"} .span6
+        .span8{:style => "background:pink;height:50px;margin-bottom:10px;"} .span8
+        .span4{:style => "background:pink;height:50px;margin-bottom:10px;"} .span4
+        .span3{:style => "background:pink;height:50px;margin-bottom:10px;"} .span3
+        .span3{:style => "background:pink;height:50px;margin-bottom:10px;"} .span3
+        .span3{:style => "background:pink;height:50px;margin-bottom:10px;"} .span3
+        .span3{:style => "background:pink;height:50px;margin-bottom:10px;"} .span3
+      %hr
+      %h2 Images
+      %p
+        %img{:alt => "Cat", :src => "img/cat.jpg"}
+      .group
+        .span6
+          %p
+            %img{:alt => "Cat", :src => "img/cat.jpg"}
+        .span4
+          %p
+            %img{:alt => "Cat", :src => "img/cat.jpg"}
+        .span2.last
+          %p
+            %img{:alt => "Cat", :src => "img/cat.jpg"}
+      %hr
+      %h2 Icons
+      %i.icon-cog
+      %i.icon-download-alt.icon-3x
+      %i.icon-github-alt.icon-rotate-90
+      %i.icon-remove-sign.icon-5x
+      %i.icon-apple
+      %i.icon-android.icon-muted
+      %i.icon-cloud.icon-border
+      %i.icon-comment
+      %i.icon-star
+      %i.icon-gamepad
+      %p
+        %a{:href => "http://fortawesome.github.io/Font-Awesome/cheatsheet/"} More icons
+    %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"}
+    :javascript
+      window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')
+    %script{:src => "js/main.js"}

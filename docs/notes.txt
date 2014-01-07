@@ -1,0 +1,13 @@
+Should one start writing css and then refactor it into approprate spots?
+
+Convenience or Excedingly styled (chop if you have a doubut)
+- _other
+- _icons
+- _notifications
+- css/assets/fonts
+- _print
+- _retnia
+- _tables
+
+Remember
+_reset == normalize.css
